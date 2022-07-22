@@ -1,0 +1,50 @@
+body {
+  @extend %montserrat-400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $default;
+}
+.container {
+  max-width: 1090px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.section__span {
+  @extend %montserrat-700;
+  line-height: 24px;
+  color: $accent;
+}
+.section__title {
+  @extend %montserrat-700;
+  font-size: 40px;
+  line-height: 50px;
+  color: $title;
+  margin: 10px 0;
+}
+.section__subtitle {
+  max-width: 446px;
+  margin-bottom: 80px;
+}
+
+.social-list {
+  text-align: center;
+  min-width: 100px;
+}
+.social-link {
+  path {
+    transition: all .5s;
+    fill: $title
+  }
+
+  &:hover {
+    path {
+      fill: $accent;
+    }
+  }
+
+  & + .social-link {
+    margin-left: 10px;
+  }
+}
